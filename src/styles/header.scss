@@ -1,0 +1,11 @@
+.header {
+  position: relative;
+  min-height: 100vh;
+  background-color: $color-primary-light;
+}
+
+@media only screen and (min-width: $first-tablet-breakpoint) {
+  .header {
+    min-height: 40vh;
+  }
+}

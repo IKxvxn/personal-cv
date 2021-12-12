@@ -1,0 +1,32 @@
+$first-tablet-breakpoint: 720px;
+$desktop-breakpoint: 1200px;
+
+$color-font-primary: #0a1931;
+$color-primary-shade-analogous: #ff477d;
+$color-primary: #ffc947;
+$color-primary-light: #ffdf94;
+$color-primary-shade: #fab000;
+$color-secondary: #185adb;
+$color-secondary-light-analogous: #18bcdb;
+$color-secondary-light: #5387ec;
+$color-secondary-shadow: #103e96;
+$color-danger: #ff477d;
+$color-white: #fff;
+
+@import "./header.scss";
+
+html {
+  font-size: 1.1rem;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Red Hat Display", sans-serif;
+  color: $color-font-primary;
+  background-color: $color-white;
+}
+
+button {
+  font-family: inherit;
+}
