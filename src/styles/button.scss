@@ -1,0 +1,67 @@
+.button {
+  all: unset;
+  padding: 0.6em;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $color-font-primary;
+  font-size: $paragraph-font;
+  font-weight: 900;
+  text-align: center;
+
+  border: 1px solid $color-font-primary;
+  border-radius: 5px;
+  background-color: $color-white;
+
+  cursor: pointer;
+  box-sizing: border-box;
+  transition: all 0.5s ease;
+
+  &:after {
+    content: "";
+    display: block;
+    height: 7px;
+    width: 100%;
+    background-image: repeating-linear-gradient(
+      45deg,
+      $color-font-primary,
+      $color-font-primary 1px,
+      transparent 2px,
+      transparent 5px
+    );
+    border-top: 1px solid $color-font-primary;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-size: 7px 7px;
+  }
+
+  &:hover {
+    background-color: $color-primary;
+
+    transform: translateY(-0.5em);
+    letter-spacing: 3px;
+    &:after {
+      animation: background-movement 12s infinite linear forwards;
+    }
+  }
+
+  &--secondary {
+    &:hover {
+      background-color: $color-secondary;
+    }
+  }
+
+  &--danger {
+    &:hover {
+      background-color: $color-danger;
+    }
+  }
+
+  &--round {
+    border-radius: 25px;
+  }
+}

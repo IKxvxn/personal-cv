@@ -1,19 +1,25 @@
 $first-tablet-breakpoint: 720px;
 $desktop-breakpoint: 1200px;
 
+$black-shadow: rgba(10, 25, 40, 0.1);
+
 $color-font-primary: #0a1931;
 $color-primary-shade-analogous: #ff477d;
 $color-primary: #ffc947;
 $color-primary-light: #ffdf94;
 $color-primary-shade: #fab000;
-$color-secondary: #185adb;
-$color-secondary-light-analogous: #18bcdb;
-$color-secondary-light: #5387ec;
-$color-secondary-shadow: #103e96;
-$color-danger: #ff477d;
+$color-secondary: #5387ec;
+$color-danger: #ff4c80;
 $color-white: #fff;
+$color-white_opacity: rgba($color-white, 0.1);
 
+$title-font: 3rem;
+$subtitle-font: 2rem;
+$paragraph-font: 1rem;
+
+@import "./keyframes.scss";
 @import "./header.scss";
+@import "./button.scss";
 
 html {
   font-size: 1.1rem;
@@ -24,7 +30,7 @@ body {
   padding: 0;
   font-family: "Red Hat Display", sans-serif;
   color: $color-font-primary;
-  background-color: $color-white;
+  background-image: $color-white;
 }
 
 button {
