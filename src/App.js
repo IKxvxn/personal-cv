@@ -8,7 +8,6 @@ function App() {
         <Button text="Hola" />
         <Button type="secondary" text="Wenas" />
         <Button type="danger" text="Adió" />
-        <Button shape="round" text="Hola" />
       </div>
     </div>
   );

@@ -1,6 +1,8 @@
 .header {
-  position: relative;
   min-height: 100vh;
+
+  @include flex(row, center, center);
+
   background-color: $color-primary-light;
 }
 

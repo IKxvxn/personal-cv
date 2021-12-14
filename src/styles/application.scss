@@ -17,6 +17,7 @@ $title-font: 3rem;
 $subtitle-font: 2rem;
 $paragraph-font: 1rem;
 
+@import "./mixins.scss";
 @import "./keyframes.scss";
 @import "./header.scss";
 @import "./button.scss";

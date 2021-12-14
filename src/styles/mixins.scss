@@ -1,0 +1,20 @@
+@mixin flex(
+  $direction: null,
+  $justifyContent: null,
+  $alignItems: null,
+  $gap: null
+) {
+  display: flex;
+  @if ($direction) {
+    justify-content: $justifyContent;
+  }
+  @if ($alignItems) {
+    align-items: $alignItems;
+  }
+  @if ($direction) {
+    flex-direction: $direction;
+  }
+  @if ($gap) {
+    gap: $gap;
+  }
+}
