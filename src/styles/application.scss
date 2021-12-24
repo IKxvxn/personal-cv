@@ -1,17 +1,11 @@
+$desktop-header-height: 80px;
+$mobile-header-height: 50px;
 $first-tablet-breakpoint: 720px;
 $desktop-breakpoint: 1200px;
 
-$black-shadow: rgba(10, 25, 40, 0.1);
-
-$color-font-primary: #0a1931;
-$color-primary-shade-analogous: #ff477d;
+$color-font-primary: #410b13;
 $color-primary: #ffc947;
-$color-primary-light: #ffdf94;
-$color-primary-shade: #fab000;
-$color-secondary: #5387ec;
-$color-danger: #ff4c80;
-$color-white: #fff;
-$color-white_opacity: rgba($color-white, 0.1);
+$color-white: #fafaff;
 
 $title-font: 3rem;
 $subtitle-font: 2rem;
@@ -37,3 +31,5 @@ body {
 button {
   font-family: inherit;
 }
+
+// https://coolors.co/ffc947-410b13-ff5964-08b2e3-62a87c-fafaff colors

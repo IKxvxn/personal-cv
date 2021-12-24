@@ -1,13 +1,28 @@
 .header {
-  min-height: 100vh;
+  box-sizing: border-box;
+  height: $mobile-header-height;
+  padding: 0.5rem 1rem;
 
-  @include flex(row, center, center);
+  @include flex(row, space-between, center);
 
-  background-color: $color-primary-light;
+  background-color: $color-font-primary;
+
+  &__logo {
+    height: 100%;
+
+    background-image: url("../images/logo.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    aspect-ratio: 2/1;
+  }
+
+  &__buttons {
+    display: inline;
+  }
 }
 
 @media only screen and (min-width: $first-tablet-breakpoint) {
   .header {
-    min-height: 40vh;
+    height: $desktop-header-height;
   }
 }
