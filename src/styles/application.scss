@@ -4,6 +4,7 @@ $first-tablet-breakpoint: 720px;
 $desktop-breakpoint: 1200px;
 
 $color-font-primary: #410b13;
+$color-danger: #ff5964;
 $color-primary: #ffc947;
 $color-white: #fafaff;
 
@@ -14,6 +15,7 @@ $paragraph-font: 1rem;
 @import "./mixins.scss";
 @import "./keyframes.scss";
 @import "./header.scss";
+@import "./banner.scss";
 @import "./button.scss";
 
 html {

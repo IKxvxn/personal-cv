@@ -1,0 +1,18 @@
+.banner {
+  height: calc(100vh - #{$mobile-header-height});
+  position: relative;
+  overflow: hidden;
+
+  background-color: $color-primary;
+  background-image: linear-gradient(
+    0deg,
+    $color-primary 35%,
+    $color-danger 100%
+  );
+
+  @include respond(tablet) {
+    height: calc(100vh - #{$desktop-header-height});
+  }
+
+  @include flex(column, center, center);
+}

@@ -18,3 +18,18 @@
     gap: $gap;
   }
 }
+
+@mixin respond($breakpoint) {
+  // all mobile goes first above all other media queries
+  // after -- all media queries go in ascending order
+  @if ($breakpoint == tablet) {
+    @media (min-width: $first-tablet-breakpoint) {
+      @content;
+    }
+  }
+  @if ($breakpoint == desktop) {
+    @media (min-width: $desktop-breakpoint) {
+      @content;
+    }
+  }
+}

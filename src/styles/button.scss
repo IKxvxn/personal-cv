@@ -15,7 +15,6 @@
 
   background-color: $color-white;
   border: 1px solid $color-font-primary;
-  border-radius: 5px;
 
   cursor: pointer;
   box-sizing: border-box;
@@ -58,7 +57,7 @@
 
     &:after {
       height: 2px;
-      animation: background-movement 1s infinite linear forwards;
+      animation: background-movement 3s infinite linear forwards;
     }
   }
 

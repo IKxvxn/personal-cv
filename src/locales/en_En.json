@@ -1,7 +1,10 @@
 {
   "cv": {
     "header": {
-      "name": "I am Kevin Arias Chinchilla",
+      "constact": "contact me"
+    },
+    "hero": {
+      "name": "Kevin Arias",
       "im": [
         "Ambitious Learner",
         "Quality Seeker",

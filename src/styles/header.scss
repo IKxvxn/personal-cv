@@ -4,11 +4,16 @@
   padding: 0.5rem 1rem;
 
   @include flex(row, space-between, center);
+  @include respond(tablet) {
+    height: $desktop-header-height;
+    padding: 0.8rem 1rem;
+  }
 
   background-color: $color-font-primary;
 
   &__logo {
     height: 100%;
+    flex-shrink: 0;
 
     background-image: url("../images/logo.svg");
     background-size: contain;
@@ -18,11 +23,5 @@
 
   &__buttons {
     display: inline;
-  }
-}
-
-@media only screen and (min-width: $first-tablet-breakpoint) {
-  .header {
-    height: $desktop-header-height;
   }
 }

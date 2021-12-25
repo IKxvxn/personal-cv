@@ -1,8 +1,6 @@
 import React from "react";
 import Button from "../atoms/Button";
 
-import PropTypes from "prop-types";
-
 export default function Header() {
   return (
     <header className="header">
