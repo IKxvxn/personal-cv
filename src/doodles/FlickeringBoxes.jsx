@@ -14,8 +14,6 @@ export default function FlickeringBoxes() {
 
         background: #410b13;
         mix-blend-mode: soft-light;
-        opacity: @r(0, 0.7);
-
         
         animation: flickering infinite 3s linear;
 
